@@ -4,10 +4,10 @@
 import cv2
 
 #Importar face cascade detector
-face_cascade = cv2.CascadeClassifier("G:/Meu Drive/DROPBOX/USP/Mestrado/Livros/OpenCV 4 with Pyhton 3/Ambiente/cap05/haarcascade_frontalface_alt.xml")
+face_cascade = cv2.CascadeClassifier("./haarcascade_frontalface_alt.xml")
 
 #Criar imagem
-img = cv2.imread("G:/Meu Drive/DROPBOX/USP/Mestrado/Livros/OpenCV 4 with Pyhton 3/Ambiente/cap05/Exercicios/fla.jpg")
+img = cv2.imread("./fla.jpg")
 
 #Transformar imagem de BRG para grayscale
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
