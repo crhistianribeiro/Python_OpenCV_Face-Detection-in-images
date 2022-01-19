@@ -15,7 +15,7 @@ gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 #Cascade multiscale detector
 faces = face_cascade.detectMultiScale(gray, 1.08,5)
 
-#Criar for para faces detectadas na imagem, desenhar retângulo
+#Criar for para faces detectadas na imagem e desenhar retângulo
 for (x, y, w, h) in faces:
     img = cv2.rectangle(img, (x,y), (x+w, y+h), (255,0,0),8)
     img_resize = cv2.resize(img,(1080,720))
